@@ -2,12 +2,12 @@
 
 ## 1. Configuration Setup
 
-**Configuration Repository**: [INSERT YOUR GITHUB REPO LINK HERE]
+**Configuration Repository**: https://github.com/UNIZAR-30246-WebEngineering/lab6-microservices.git
 
 Describe the changes you made to the configuration:
 
 - **What did you modify in `accounts-service.yml`?**
-  [cite_start]I modified the `server.port` property, changing it from `3333` to `2222` [cite: 141-142]. This change was made to verify that the service could dynamically pick up new configuration from the Config Server and start a second instance on a different port without modifying the source code.
+  I modified the `server.port` property, changing it from `3333` to `2222`. This change was made to verify that the service could dynamically pick up new configuration from the Config Server and start a second instance on a different port without modifying the source code.
 
 - **Why is externalized configuration useful in microservices?**
   It adheres to the "Externalized Configuration" pattern. It allows managing configuration for all services in a central place (the Config Server), enabling updates and environment-specific changes (dev, test, prod) without needing to rebuild or redeploy the application artifacts.
